@@ -34,12 +34,4 @@ export class CardFormComponent {
   onResetClick() {
     this.cardForm.reset();
   }
-
-  getStringValue(name: string | null | undefined): string {
-    if (!name) {
-      return '';
-    } else {
-      return name;
-    }
-  }
 }

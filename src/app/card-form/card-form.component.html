@@ -1,9 +1,9 @@
 <div class="columns">
   <div class="column">
     <app-card
-      [name]="getStringValue(cardForm.get('name')?.value)"
-      [cardNumber]="getStringValue(cardForm.get('cardNumber')?.value)"
-      [expiration]="getStringValue(cardForm.get('expiration')?.value)"
+      [name]="cardForm.get('name')?.value ?? ''"
+      [cardNumber]="cardForm.get('cardNumber')?.value ?? ''"
+      [expiration]="cardForm.get('expiration')?.value ?? ''"
     >
     </app-card>
   </div>
